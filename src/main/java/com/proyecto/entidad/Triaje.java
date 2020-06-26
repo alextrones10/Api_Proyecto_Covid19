@@ -42,7 +42,7 @@ public class Triaje {
 	private String direccion;
 	
 	@Column(name = "ubigeo")
-	private String ubigeo;
+	private int ubigeo;
 	
 	@Column(name = "difresp")
 	private String dificultadRespirar;
@@ -74,7 +74,6 @@ public class Triaje {
 	@Column(name = "userId")
 	private int userId;
 
-	
 	public int getIdTriaje() {
 		return idTriaje;
 	}
@@ -115,11 +114,11 @@ public class Triaje {
 		this.direccion = direccion;
 	}
 
-	public String getUbigeo() {
+	public int getUbigeo() {
 		return ubigeo;
 	}
 
-	public void setUbigeo(String ubigeo) {
+	public void setUbigeo(int ubigeo) {
 		this.ubigeo = ubigeo;
 	}
 
@@ -202,6 +201,9 @@ public class Triaje {
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
+
+	
+	
 
 	
 	
