@@ -26,8 +26,23 @@ public class Triaje {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY) 
-	@Column(name = "id_triaje")
+	@Column(name = "idtriaje")
 	private int idTriaje;
+	
+	@Column(name = "departamento")
+	private String departamento;
+	
+	@Column(name = "provincia")
+	private String provincia;
+	
+	@Column(name = "distrito")
+	private String distrito;
+	
+	@Column(name = "direccion")
+	private String direccion;
+	
+	@Column(name = "ubigeo")
+	private String ubigeo;
 	
 	@Column(name = "difresp")
 	private String dificultadRespirar;
@@ -53,15 +68,59 @@ public class Triaje {
 	@Column(name = "situacion")
 	private String situacionEconomica;
 	
+	@Column(name = "estado")
+	private String estado;
+	
 	@Column(name = "userId")
 	private int userId;
 
+	
 	public int getIdTriaje() {
 		return idTriaje;
 	}
 
 	public void setIdTriaje(int idTriaje) {
 		this.idTriaje = idTriaje;
+	}
+
+	public String getDepartamento() {
+		return departamento;
+	}
+
+	public void setDepartamento(String departamento) {
+		this.departamento = departamento;
+	}
+
+	public String getProvincia() {
+		return provincia;
+	}
+
+	public void setProvincia(String provincia) {
+		this.provincia = provincia;
+	}
+
+	public String getDistrito() {
+		return distrito;
+	}
+
+	public void setDistrito(String distrito) {
+		this.distrito = distrito;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getUbigeo() {
+		return ubigeo;
+	}
+
+	public void setUbigeo(String ubigeo) {
+		this.ubigeo = ubigeo;
 	}
 
 	public String getDificultadRespirar() {
@@ -128,6 +187,14 @@ public class Triaje {
 		this.situacionEconomica = situacionEconomica;
 	}
 
+	public String getEstado() {
+		return estado;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
 	public int getUserId() {
 		return userId;
 	}
@@ -135,6 +202,9 @@ public class Triaje {
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
+
+	
+	
 	
 	
 

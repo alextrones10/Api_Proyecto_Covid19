@@ -21,25 +21,15 @@ public class Usuario {
 	@Column(name = "tdoc_usu")
 	private String tipodoc;
 	
-	@Column(name = "celu_usu")
-	private String celular;
-	
 	@Column(name = "naci_usu")
 	private String nacionalidad;
 	
-	@Column(name = "dept_usu")
-	private String departamento;
+	@Column(name = "celu_usu")
+	private String celular;
 	
-	@Column(name = "prov_usu")
-	private String provincia;
-	
-	@Column(name = "dist_usu")
-	private String distrito;
-	
-	@Column(name = "dire_usu")
-	private String direccion;
+	@Column(name = "correo_usu")
+	private String correo;
 
-	
 	public int getIdUsuario() {
 		return idUsuario;
 	}
@@ -64,14 +54,6 @@ public class Usuario {
 		this.tipodoc = tipodoc;
 	}
 
-	public String getCelular() {
-		return celular;
-	}
-
-	public void setCelular(String celular) {
-		this.celular = celular;
-	}
-
 	public String getNacionalidad() {
 		return nacionalidad;
 	}
@@ -80,37 +62,23 @@ public class Usuario {
 		this.nacionalidad = nacionalidad;
 	}
 
-	public String getDepartamento() {
-		return departamento;
+	public String getCelular() {
+		return celular;
 	}
 
-	public void setDepartamento(String departamento) {
-		this.departamento = departamento;
+	public void setCelular(String celular) {
+		this.celular = celular;
 	}
 
-	public String getProvincia() {
-		return provincia;
+	public String getCorreo() {
+		return correo;
 	}
 
-	public void setProvincia(String provincia) {
-		this.provincia = provincia;
+	public void setCorreo(String correo) {
+		this.correo = correo;
 	}
 
-	public String getDistrito() {
-		return distrito;
-	}
-
-	public void setDistrito(String distrito) {
-		this.distrito = distrito;
-	}
-
-	public String getDireccion() {
-		return direccion;
-	}
-
-	public void setDireccion(String direccion) {
-		this.direccion = direccion;
-	}
+	
 	
 	
 	
